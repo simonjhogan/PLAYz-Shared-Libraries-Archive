@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script src="system/script/jquery-2.0.3.min.js"></script>
+<script src="system/script/jquery.lazyload.js"></script>
+<script src="system/script/jquery.mousewheel.js"></script>
+<script src="system/script/jquery.caret.js"></script>
+<script src="system/script/jquery.tooltips.min.js"></script>
+<script src="system/script/plex.js"></script>
+<script src="system/script/shared.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	shared = new Shared();
+	shared.initialise();	
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="system/style/library.css"/>
+<link rel="stylesheet" type="text/css" href="system/style/glyphicons.css"/>
+
+</head>
+
+<body>
+<div id="applicationWallpaper"></div>
+<div id="application">
+	<div id="navigator">
+		<div id="clock"></div>
+		<div class="flipper">
+			<div id="sections" class="menu vertical">
+				<ul></ul>
+			</div>
+		</div>
+		<div id="navigatorSwitch" class="action"><i class="glyphicon message-forward"></i></div>
+	</div>
+	<div id="media">
+		<div id="server">
+			<div id="serverName"></div>
+			<div id="serverSelect" style="display: none;"></div>
+		</div>
+		<div id="recentlyAdded" class="media-quick-menu" style="display: none;">
+			<div class="content"><ul></ul></div>
+			<div class="name">Recently Added</div>
+		</div>
+	</div>
+</div>
+<div id="preview" style="display: none;">
+	<div id="previewContent" class="content"></div>
+	<div id="previewClose" class="action"><i class="glyphicon remove"></i></div>	
+</div>
+<div id="debug" style="display: none;"></div>
+<div id="loader" style="display: none;">
+	<img src="system/images/loader.gif" alt="loading"/>
+	<div id="message"></div>
+</div>
+<object type="application/x-netcast-info" id="device" width="0" height="0"></object>
+</body>
+
+</html>
