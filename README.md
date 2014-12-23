@@ -1,7 +1,9 @@
 PLAYz-Shared-Libraries-Archive
 ==============================
 
-++Really old code with a shared library implementation - Not for updating
+----------------------------------------
+Really old code with a shared library implementation - Not for updating
+----------------------------------------
 
 Created by Simon J. Hogan
 
